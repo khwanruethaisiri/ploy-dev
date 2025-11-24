@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ploy – Software Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ploy – Software Developer skilled in .NET, MSSQL, JavaScript and end-to-end deployment." />
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color-scheme: dark;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background: #020617;
+            color: #e5e7eb;
+        }
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            background: radial-gradient(circle at top, #1d4ed8, #020617);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
+        header p {
+            margin: 0.6rem 0 0;
+            font-size: 1rem;
+            color: #c7d2fe;
+        }
+        .tagline {
+            margin-top: 0.6rem;
+            font-size: 0.95rem;
+            color: #a5b4fc;
+        }
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 3rem;
+        }
+        section {
+            margin-bottom: 2.4rem;
+        }
+        h2 {
+            margin-bottom: 0.75rem;
+            font-size: 1.4rem;
+            border-left: 4px solid #38bdf8;
+            padding-left: 0.6rem;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 0.96rem;
+        }
+        .muted {
+            font-size: 0.86rem;
+            color: #9ca3af;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.7rem;
+        }
+        .skill-pill {
+            padding: 0.3rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid #38bdf8;
+            font-size: 0.8rem;
+            background: rgba(15,23,42,0.8);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .project-card {
+            background: #020617;
+            border-radius: 0.9rem;
+            padding: 1rem;
+            border: 1px solid #1e293b;
+            box-shadow: 0 18px 40px rgba(15,23,42,0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, border-color 0.1s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: #38bdf8;
+            box-shadow: 0 20px 50px rgba(15,23,42,0.9);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.4rem;
+            font-size: 1.02rem;
+        }
+        .project-card p {
+            font-size: 0.9rem;
+            color: #cbd5f5;
+        }
+        .project-meta {
+            margin-top: 0.3rem;
+            font-size: 0.78rem;
+            color: #94a3b8;
+        }
+        .project-card a.btn {
+            margin-top: 0.8rem;
+            align-self: flex-start;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid #38bdf8;
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: #e0f2fe;
+        }
+        .project-card a.btn:hover {
+            background: #0f172a;
+        }
+        .contact-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.7rem;
+        }
+        .contact-list li {
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.78rem;
+            color: #6b7280;
+            border-top: 1px solid #111827;
+            background: #020617;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding-top: 2.4rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ploy – Software Developer</h1>
+        <p>.NET • MSSQL • JavaScript • Deployment</p>
+        <div class="tagline">
+            Building reliable, practical web applications and handling the full development workflow.
+        </div>
+    </header>
+
+    <main>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I’m Ploy, a software developer who builds reliable and practical web applications using
+                <strong>.NET, C#, MSSQL, and JavaScript</strong>.
+                I enjoy solving real business problems, improving workflow efficiency,
+                and designing systems that are easy to maintain and scale.
+            </p>
+            <p>
+                I handle the full development process end-to-end, from coding and database design to deployment.
+                I’m experienced with publishing .NET applications, configuring IIS and app pools, and managing DNS
+                records such as Host A. I’m also expanding into Business Intelligence and Data Science to combine
+                development with data-driven decision making.
+            </p>
+
+            <div class="skills">
+                <span class="skill-pill">.NET / C#</span>
+                <span class="skill-pill">MSSQL / T-SQL</span>
+                <span class="skill-pill">JavaScript / jQuery</span>
+                <span class="skill-pill">HTML / CSS</span>
+                <span class="skill-pill">IIS & Deployment</span>
+                <span class="skill-pill">Git & GitHub</span>
+                <span class="skill-pill">Power BI (beginner)</span>
+            </div>
+        </section>
+
+            
+            
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                If you’d like to get in touch about opportunities or collaborations, feel free to contact me:
+            </p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:khwanruethai.ploy@gmail.com">khwanruethai.ploy@gmail.com</a></li>
+                <li>Location: Bangkok, Thailand</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        © <span id="year"></span> Ploy – Portfolio on GitHub Pages
+    </footer>
+
+    <script>
+        // year in footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // load GitHub repos (ใส่ username จริงของพลอยด้านล่าง)
+        const GITHUB_USERNAME = "YOUR_GITHUB_USERNAME"; // TODO: เปลี่ยนตรงนี้
+        const githubProjectsContainer = document.getElementById("github-projects");
+
+        async function loadGithubRepos() {
+            try {
+                const res = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated`);
+                if (!res.ok) return;
+                const data = await res.json();
+
+                // เลือก repo ที่ไม่ใช่ fork และมี description
+                const topRepos = data
+                    .filter(repo => !repo.fork)
+                    .slice(0, 6);
+
+                if (topRepos.length === 0) {
+                    const p = document.createElement("p");
+                    p.className = "muted";
+                    p.textContent = "No public repositories found or username not set.";
+                    githubProjectsContainer.appendChild(p);
+                    return;
+                }
+
+                topRepos.forEach(repo => {
+                    const card = document.createElement("div");
+                    card.className = "project-card";
+
+                    const desc = repo.description || "No description provided.";
+                    const lang = repo.language || "Unknown language";
+
+                    card.innerHTML = `
+                        <div>
+                            <h3>${repo.name}</h3>
+                            <p>${desc}</p>
+                            <div class="project-meta">
+                                Language: ${lang} · Updated: ${new Date(repo.updated_at).toLocaleDateString("en-GB")}
+                            </div>
+                        </div>
+                        <a class="btn" href="${repo.html_url}" target="_blank">View on GitHub</a>
+                    `;
+
+                    githubProjectsContainer.appendChild(card);
+                });
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        if (GITHUB_USERNAME !== "YOUR_GITHUB_USERNAME") {
+            loadGithubRepos();
+        }
+    </script>
+</body>
+</html>
